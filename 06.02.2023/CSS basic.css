@@ -1,0 +1,82 @@
+h1{
+    color: blueviolet;
+    background-color:lavender;
+    font-style: italic;
+    text-align: center;
+}
+a[href="www.google.com"]
+{
+    color: chocolate;
+}
+a[href^="https"]
+{
+    color: darkgoldenrod;
+}
+a[href$=".in"]
+{
+    color: palegreen;
+}
+a[href*="branding"]
+{
+    color:darkorchid;
+}
+a[href*="Amazon" i]
+{
+    color: greenyellow;
+}
+a[href*="Flipkart" s]
+{
+    color: darkslategray;
+}
+a[href*="flipkart"]
+{
+    color:cadetblue;
+}
+a[href^="www"][href$=".net"]
+{
+    color: forestgreen;
+}
+img[class~="image"]
+{
+    width: 50px;
+    height: 50px;
+}
+ol[type = "a" i]
+{
+    background-color: bisque;
+    list-style: upper-alpha;
+}
+ol[type = "B" i]
+{
+    background-color:darkcyan;
+    list-style: lower-roman;
+}
+ol[type ="b" s]
+{
+    background-color:cornflowerblue;
+    list-style: square;
+}
+div[lang] {
+    font-weight: bold;
+    background-color:  darkmagenta;
+  }
+  div:not([lang])
+  {
+    font-style: italic;
+    background-color: burlywood;
+  }
+  div[lang~="en-au"]
+  {
+    background-color: aquamarine;
+  }
+  div[lang="de"]
+  {
+    background-color: chocolate;
+  }
+  div[lang|="ZH"]
+  {
+    background-color: darksalmon;
+  }
+  
+
+  
