@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="selectors2.css">
+    <title>Selectors</title>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <ol>
+        <li>Attribute selector</li>
+        <li>class Selector</li>
+        <li>ID Selector</li>
+        <li>Type Selector</li>
+        <li>Universal Selector</li>
+    </ol>
+    <h1>Combinator</h1>
+    <p class="Heading">1)Adjacent sibiling Combinator</p>
+    <img src="image.png" alt="Combinator">
+    <p>Learning Logo</p>
+    <img src="image.png" alt="Combinator"><br>
+    <p>Learning Logo[Not followed Properly]</p>
+    <p class="Heading">2)Child Combinator</p>
+    <div>
+        <p>Paragraph 1 inside div</p>
+        <p>Paragraph 2 inside div</p>
+        <section>
+            <p>Paragraph 3 inside div but directly to section</p>
+        </section>
+        <p>Paragraph 4 inside div</p>
+    </div>
+    <p class="Heading">3)Descendant combinator</p>
+    <article>
+        <p>Paragraph 1 inside article</p>
+        <p>Paragraph 2 inside article</p>
+    <section>
+        <p>Paragraph 3 inside section but also inside an article </p>
+    </section>
+        <p>Paragraph 4 inside article</p>
+    </article>
+    <p class="Heading">4)General sibling combinator</p>
+    <div>
+        <a href="www.google.com">GOOGLE</a>
+        <p>Link is inside an div</p>
+    </div>
+    <a href="www.flipkart.com">Flipkart</a>
+    <p>Flipkart is outside an div</p>
+    <a href="www.amazon.in">Amazon</a>
+    <p>Amazon is outside an div</p>
+</body>
+</html>

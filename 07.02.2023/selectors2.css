@@ -1,0 +1,35 @@
+h1{
+    font-weight: bolder;
+    background-color: lavender;
+    color: darkorchid;
+}
+li{
+    font-style: italic;
+    font-weight: bolder;
+}
+.Heading{
+    font-weight: bolder;
+    font-style: oblique;
+    color: aqua;
+}
+*{
+    background-color:bisque;
+}
+img{
+    width: 10s0px;
+    height:100px;
+}
+img + p{
+    font-size: large;
+    font-weight: bold;
+    color:blueviolet;
+}
+div > p{
+    color: darkmagenta;
+}
+article p{
+    color: coral;
+}
+div ~ a{
+    color: crimson;
+}
