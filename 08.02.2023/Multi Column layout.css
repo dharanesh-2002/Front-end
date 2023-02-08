@@ -1,0 +1,36 @@
+h1{
+    background-color: lavender;
+    color: darkviolet;
+    font-style: italic;
+    text-align: center;
+}
+#Count{
+    column-count: 2 ;
+    background-color: aqua;
+}
+#Width{
+    column-width: 100px;
+    background-color: aquamarine;
+}
+#Col_short{
+    columns: 20em;
+    background-color: azure;
+}
+#Col_short1{
+    columns: 12;
+    background-color: bisque;
+}
+#Col_short2{
+    columns: 12 3em;
+    background-color:cadetblue;
+}
+#Col_short3{
+    column-count: 4;
+    column-gap: 100px;
+    background-color:darkkhaki;
+}
+#Col_height{
+    column-count: 3;
+    max-height: 50px;
+    background-color: darkgoldenrod;
+}
