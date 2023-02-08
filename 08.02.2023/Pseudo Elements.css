@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    background-color: lavender;
+    color: indigo;
+}
+/* Multiple Selectors */
+p::first-letter{
+    color:darkred;
+    font-size: xx-large;
+}
+p::first-line{
+    color: aqua;
+}
+h2::before{
+    content:url(https://img.icons8.com/doodle/1x/hello.png);
+}
+h2::after{
+    content: url(https://img.icons8.com/ios-filled/1x/so-so.png);
+}
+li::marker{
+    color:blueviolet;
+}
+div::selection{
+    background-color: aquamarine;
+}

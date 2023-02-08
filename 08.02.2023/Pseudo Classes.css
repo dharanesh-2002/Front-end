@@ -1,0 +1,27 @@
+h1{
+    color:maroon ;
+    font-style: italic;
+}
+.active{
+    background-color: tomato;
+    border: 0cap;
+    width: 70px;
+    height: 20px;
+    margin: auto;
+    font-style: italic;
+    font-weight: bolder;
+}
+.active:active{
+    box-shadow: 5px 5px 3px blanchedalmond;
+}
+.mozilla:active{
+    color: chocolate;
+    text-shadow: 5px 10px 3px grey;
+}
+a:any-link{
+    color:hotpink;
+    text-decoration-color:blueviolet
+}
+input:-webkit-autofill{
+    border: 2px solid blueviolet;
+}
