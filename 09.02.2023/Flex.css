@@ -1,0 +1,72 @@
+.Container {
+    display: flex;
+    background-color: blueviolet;
+    min-height: 300px;
+    flex-direction: column;
+}
+
+#Item1 {
+    background-color: aqua;
+    flex: 1;
+    order: 3;
+
+}
+
+#Item2 {
+    background-color: aquamarine;
+    flex: 1;
+    order: 1;
+}
+
+#Item3 {
+    background-color: darkturquoise;
+    flex: 1;
+    order: 2;
+}
+
+.Example {
+    background-color: darkgreen;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Item {
+    width: 150px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 2px solid lightcoral;
+}
+
+/* .ColumnExample{
+    background-color:cadetblue;
+    min-height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+} */
+.Example1 {
+    background-color: cornflowerblue;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.Item1 {
+    align-self: flex-start;
+}
+
+.Item2 {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.Item3 {
+    align-items: flex-end;
+    flex-shrink: 1;
+}

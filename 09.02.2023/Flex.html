@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="Flex.css">
+</head>
+
+<body>
+    <div class="Container">
+        <p id="Item1">The touch events interfaces are relatively low-level APIs that can be used to support
+            application-specific multi-touch interactions such as a two-finger gesture. A multi-touch interaction starts
+            when a finger (or stylus) first touches the contact surface. Other fingers may subsequently touch the
+            surface and optionally move across the touch surface. The interaction ends when the fingers are removed from
+            the surface. During this interaction, an application receives touch events during the start, move, and end
+            phases.</p>
+        <p id="Item2">Touch events are similar to mouse events except they support simultaneous touches and at different
+            locations on the touch surface. The TouchEvent interface encapsulates all of the touchpoints that are
+            currently active. The Touch interface, which represents a single touchpoint, includes information such as
+            the position of the touch point relative to the browser viewport.</p>
+        <p id="Item3">This iterates over the changed touches as well, but it looks in our cached touch information array
+            for the previous information about each touch to determine the starting point for each touch's new line
+            segment to be drawn. This is done by looking at each touch's Touch.identifier property. This property is a
+            unique integer for each touch and remains consistent for each event during the duration of each finger's
+            contact with the surface.</p>
+    </div>
+    <br>
+    <br>
+    <div class="Example">
+        <p class="Item"></p>
+        <p class="Item"></p>
+        <p class="Item"></p>
+    </div>
+    <br>
+    <br>
+    <!-- <div class="ColumnExample">
+        <p class="Item"></p>
+        <p class="Item"></p>
+        <p class="Item"></p>
+    </div> -->
+    <div class="Example1">
+        <p class="Item Item1"></p>
+        <p class="Item Item2"></p>
+        <p class="Item Item3"></p>
+    </div>
+</body>
+
+</html>
