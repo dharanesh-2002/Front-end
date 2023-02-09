@@ -1,0 +1,49 @@
+h1{
+    background-color: lavender;
+    color: darkmagenta;
+    text-align: center;
+    font-style: italic;
+}
+*{
+    background-color: bisque;
+}
+span.para:hover{
+    color: blueviolet;
+}
+a{
+    font-size: large;
+}
+a:link{
+    color:aquamarine;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color:darkmagenta;
+}
+a:active{
+    color:tomato;
+}
+/* div{
+    padding: 5px 5px 5px 5px;
+    margin: 50px 50px 20px 50px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: blueviolet;
+} 
+div:hover{
+    background-color: cornflowerblue;
+}*/
+p{
+    color: black;
+}
+p i:first-child{
+    color: blue;
+}
+p:first-child i{
+    color: blueviolet;
+}
+q:lang(No){
+    quotes: "~" "~";
+}
