@@ -1,0 +1,51 @@
+.Para1{
+    background-color: aqua;
+}
+.Para2{
+    background-color: aquamarine;
+}
+.Para3{
+    background-color: lightgoldenrodyellow;
+}
+
+/* @media (min-width:801px){
+    .Container{ 
+        display: flex;
+    }
+    .Para3{
+        background-color: blueviolet;
+    }
+} */
+/* @media screen and (min-width:400px) {
+    .Container{
+        display: flex;
+    }
+    .Para2{
+        background-color: blueviolet;
+    }
+} */
+/* @media (300px <= width <=500px)
+{
+    .Para2{
+        color:darkmagenta;
+    }
+} */
+
+/* @media (color){
+    .Container{
+        background-color: aquamarine;
+        display: flex;
+    }
+} */
+@media screen and (min-width:500px) and (orientation:landscape) {
+
+    .Para1{
+        background-color: brown;
+    }
+}
+
+/* @media not(print){
+    .Container{
+        display: flex;
+    }
+} */
