@@ -59,14 +59,17 @@
 
 .Item1 {
     align-self: flex-start;
+    flex-shrink: 0;
 }
 
 .Item2 {
     flex-grow: 1;
     align-items: center;
+    flex-basis: 20%;
 }
 
 .Item3 {
     align-items: flex-end;
     flex-shrink: 1;
+    flex-basis: 30%;
 }
