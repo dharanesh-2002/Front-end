@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <form action="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" method="get" >
+        <p>Enter Your Details here:</p>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Dharanesh"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="T K"><br>
+        <label for="Birth">Birthday:</label>
+        <input type="date" name="date" id="Birth" min="2022-02-22"><br>
+        <label for="email">Email ID:</label>
+        <input type="email" name="mail" id="email"><br>
+        <label for="file">Attach the resume</label>
+        <input type="file" name="Attach" id="file"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <form>
+        <label for="Buses">Choose a buses</label>
+        <select id="Buses">
+            <option value="AC buses"> AC buses</option>
+            <option value="Non AC buses">Non AC buses</option>
+        </select>
+    </form>
+    <br>
+    <br>
+    <label for="alert msg">Click to see pop up</label>
+    <button type="button" id="alert msg" onclick="alert('Hii!! Dharanesh')">Click</button>
+</body>
+</html>
