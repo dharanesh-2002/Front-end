@@ -1,35 +1,43 @@
-h1{
+h1 {
     font-weight: bolder;
     background-color: lavender;
     color: darkorchid;
 }
-li{
+
+li {
     font-style: italic;
     font-weight: bolder;
 }
-.Heading{
+
+.Heading {
     font-weight: bolder;
     font-style: oblique;
     color: aqua;
 }
-*{
-    background-color:bisque;
+
+* {
+    background-color: bisque;
 }
-img{
+
+img {
     width: 10s0px;
-    height:100px;
+    height: 100px;
 }
-img + p{
+
+img+p {
     font-size: large;
     font-weight: bold;
-    color:blueviolet;
+    color: blueviolet;
 }
-div > p{
+
+div>p {
     color: darkmagenta;
 }
-article p{
+
+article p {
     color: coral;
 }
-div ~ a{
+
+div~a {
     color: crimson;
 }

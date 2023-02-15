@@ -1,38 +1,42 @@
-h1{
+h1 {
     text-align: center;
     background-color: lavenderblush;
     color: blueviolet;
     font-weight: unset;
 }
-.class{
-    background-color:beige;
+
+.class {
+    background-color: beige;
 }
-.web
-{
-    color:indigo;
+
+.web {
+    color: indigo;
 }
-.storage
-{
-    background-color:ivory;
+
+.storage {
+    background-color: ivory;
 }
-h3{
+
+h3 {
     font-weight: 500;
     font-style: oblique;
 }
-ol[class="Storage" s]{
+
+ol[class="Storage" s] {
     color: blueviolet;
 }
-.Shadow{
+
+.Shadow {
     color: darkorchid;
     font-weight: bolder;
     text-shadow: 7px 5px 4px black;
 }
-#Sockets
-{
-    color:indigo;
+
+#Sockets {
+    color: indigo;
 }
-p[id="sockets" s]
-{
-    background-color:ivory;
-    color:indigo;
+
+p[id="sockets" s] {
+    background-color: ivory;
+    color: indigo;
 }

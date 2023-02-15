@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
     <link rel="stylesheet" href="Media_Queries.css">
+    <style>
+        #container {
+            background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #MobileBtn {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            #MobileBtn {
+                background-color: blue;
+                display: flex;
+                justify-content: flex-end;
+            }
+            #container {
+            display: none;
+        }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="Container">
-        <p class="Para1">Media features describe the specific characteristics of a given user agent, output device, or environment. For instance, you can apply specific styles to widescreen monitors, computers that use mice, or to devices that are being used in low-light conditions</p>
-        <p class="Para2">Many media features are range features, which means they can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints. For example, this CSS will apply styles only if your browser's viewport width is equal to or narrower than 1250px:</p>
-        <p class="Para3">For example, the hover feature allows a query to test against whether the device supports hovering over elements. Media feature expressions test for their presence or value, and are entirely optional. Each media feature expression must be surrounded by parentheses.For example, the hover feature allows a query to test against whether the device supports hovering over elements. Media feature expressions test for their presence or value, and are entirely optional. Each media feature expression must be surrounded by parentheses.</p>
+    <div id="container">
+        <p>Tutorials</p>
+        <p>Projects</p>
+        <p>Location</p>
+    </div>
+    <div id="MobileBtn">
+        <p>Menu</p>
     </div>
 
 </body>
+
 </html>

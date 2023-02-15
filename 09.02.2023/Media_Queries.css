@@ -1,9 +1,9 @@
 .Para1{
     background-color: aqua;
 }
-.Para2{
+/* .Para2{
     background-color: aquamarine;
-}
+} */
 .Para3{
     background-color: lightgoldenrodyellow;
 }
@@ -12,15 +12,15 @@
     .Container{ 
         display: flex;
     }
-    .Para3{
+    .Para1{
         background-color: blueviolet;
     }
 } */
-/* @media   (min-width:400px) or (max-width:500px) {
+/* @media   (min-width:400px) or (max-width:800px) {
     .Container{
         display: flex;
     }
-    .Para2{
+    .Para1{
         background-color: blueviolet;
     }
 } */
@@ -39,15 +39,18 @@
 } */
 /* @media screen, (max-width:500px) and (orientation:landscape) {
 
-    .Para1{
+    .Para2{
         background-color: brown;
     }
 } */
-
-@media print and (color){
-    .Container{
-        background-color: brown; 
-    }
+.Container{
+    background-color:darkgrey;
 }
+
+@media print{
+    .Para2{
+        color: brown; 
+    }
+} 
 
 

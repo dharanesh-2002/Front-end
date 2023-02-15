@@ -1,8 +1,9 @@
-h1{
-    color:maroon ;
+h1 {
+    color: maroon;
     font-style: italic;
 }
-.active{
+
+.active {
     background-color: tomato;
     border: 0cap;
     width: 70px;
@@ -11,17 +12,21 @@ h1{
     font-style: italic;
     font-weight: bolder;
 }
-.active:active{
+
+.active:active {
     box-shadow: 5px 5px 3px blanchedalmond;
 }
-.mozilla:active{
+
+.mozilla:active {
     color: chocolate;
     text-shadow: 5px 10px 3px grey;
 }
-a:any-link{
-    color:hotpink;
-    text-decoration-color:blueviolet
+
+a:any-link {
+    color: hotpink;
+    text-decoration-color: blueviolet
 }
-input:-webkit-autofill{
+
+input:-webkit-autofill {
     border: 2px solid blueviolet;
 }

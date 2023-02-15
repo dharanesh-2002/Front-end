@@ -63,13 +63,11 @@
 }
 
 .Item2 {
-    flex-grow: 1;
     align-items: center;
-    flex-basis: 20%;
+    flex-basis: 50%;
 }
 
 .Item3 {
     align-items: flex-end;
-    flex-shrink: 1;
-    flex-basis: 30%;
+    flex-grow: 1;
 }
