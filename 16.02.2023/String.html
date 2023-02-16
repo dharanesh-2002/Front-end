@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+        h1{
+            background-color: lavender;
+            color:darkorchid;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Strings</h1>
+    <script>
+        // Calculate string Length
+        const String="Dharanesh";
+        console.log(String.length);
+
+        const greet=`Hello, ${String}!!!`;
+        console.log(greet);
+
+        // Includes held to check whether the word is found or not
+        if(String.includes('Ane')){
+            console.log("It Found");
+        }
+        else{
+            console.log("Not Found");
+        }
+
+        if(String.startsWith('dharan'))
+        {
+            console.log("Starts with that word");
+        }
+        else{
+            console.log("Not starts with that word");  
+        }
+
+        if(String.endsWith('nesH'))
+        {
+            console.log("Ends with that word");
+        }
+        else{
+            console.log("Not Ends with that word");  
+        }
+
+        const sentance="MDN - Resources for developers, by developers";
+        const first=sentance.indexOf("developers");
+        console.log(first);
+        console.log(sentance.indexOf("developers",first+1));
+        console.log(sentance.indexOf("Dharan"));//Not found means gives an "-1"
+
+        console.log(String.slice(0,6));
+        console.log(String.slice(5,9));//if index num not found, then it won't display anything.
+
+        console.log(String.toUpperCase());
+        console.log(String.toLowerCase());
+
+        const myName="Dharaneesh";
+        console.log(myName);
+        console.log(myName.replace('nees','nes'));
+        console.log(myName.replace('don','nes'));//if it not present, then same string will print.
+
+        console.log(5+6/2*4-2);
+
+        console.log(String.at(5));
+        console.log(String.at(10));//It replies an undefined.
+        console.log(String.at(-2));//Calculate from reverse.
+
+        // charAt won't take an negative value
+        console.log(String.charAt(5));
+        console.log(String.charAt(-1));//Return nothing..
+
+        console.log(String.charCodeAt(5));//Which display an ASCII value of it.
+
+        
+    </script>
+</body>
+</html>
