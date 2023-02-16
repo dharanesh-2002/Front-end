@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings2</title>
+    <style>
+        h1{
+            background-color: lavender;
+            color: blueviolet;
+            font-style: oblique;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Strings</h1>
+    <script>
+        let greet="Hello,";
+        let greet2="World";
+        console.log(greet.concat(greet2));//Used to merge an string.
+
+        console.log(String.fromCharCode(65,43,42,67));//Returns an ASCII value.
+
+        console.log(String.fromCodePoint(65,43,42,67));//Same an ASCII  value.
+
+        let sentance="Developers develop an website and also develop an App";
+        console.log(sentance.indexOf("develop"));
+        console.log(sentance.lastIndexOf("develop"));
+
+        console.log(sentance.match(/[A-Z]/g));//(2) ['D', 'A']...g=>global sensitive.
+        console.log(sentance.match(/[A-Z]/gi));//gi=>global insensitive.
+
+        console.log(greet.padEnd(10,'*'));//Hello,**** =>only after that index num
+        console.log(greet2.padEnd(6));//"World "=>Gives an space after it.
+
+        console.log(greet.padStart(10,'>'));// >>>>Hello,
+
+    </script>
+</body>
+</html>
