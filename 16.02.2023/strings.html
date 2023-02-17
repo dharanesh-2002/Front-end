@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings2</title>
+    <style>
+        h1{
+            background-color: lavender;
+            color: blueviolet;
+            font-style: oblique;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Strings</h1>
+    <script>
+        let greet="Hello,";
+        let greet2="World";
+        console.log(greet.concat(greet2));//Used to merge an string.
+
+        console.log(String.fromCharCode(65,43,42,67));//Returns an ASCII value.
+
+        console.log(String.fromCodePoint(65,43,42,67));//Same an ASCII  value.
+
+        let sentance="Developers develop an website and also develop an App";
+        console.log(sentance.indexOf("develop"));
+        console.log(sentance.lastIndexOf("develop"));
+
+        console.log(sentance.match(/[A-Z]/g));//(2) ['D', 'A']...g=>global sensitive.
+        console.log(sentance.match(/[A-Z]/gi));//gi=>global insensitive.
+
+        console.log(greet.padEnd(10,'*'));//Hello,**** =>only after that index num
+        console.log(greet2.padEnd(6));//"World "=>Gives an space after it.
+
+        console.log(greet.padStart(10,'>'));// >>>>Hello,
+
+        let path = String.raw`C:\ Development\ profile\ aboutme.html`;
+        console.log(path);//To define an path which avoid escaping sequence.
+
+        console.log(greet.repeat(5));//It is used to repeat an word
+
+        const sentance1="MDN - Resources for developers, by developers";
+        console.log(sentance1.replace("developers","software developers"));
+        console.log(sentance1.replaceAll("developers","software developers"));
+
+        console.log(sentance.search("developers"));//Not present means return "-1";
+        console.log(sentance.search("develop"));
+
+        const Split=sentance.split(" ");
+        console.log(Split[4]);//which display word by array: split content via array[0],array[1],...
+        console.log(Split);
+
+        console.log(Split[3].substring(0,3));//Work as like slice;
+
+        const sample=Split[3];
+        console.log(`Local: ${sample.toLocaleLowerCase('Local')}`);
+        console.log(`Local: ${sample.toLocaleUpperCase('Local')}`);
+
+        console.log(sample.toLowerCase());
+        console.log(sample.toUpperCase());
+
+        const space="   Hello Dharan!!!   ";
+        console.log(space);
+        console.log(space.trim());//Removes white-spaces...
+        console.log(space.trimEnd());
+        console.log(space.trimStart());
+
+        
+    </script>
+</body>
+</html>
