@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        const array=[10,20,30,34,52];
+        const check= (value)=> value<51;
+        console.log(array.every(check));
+
+        const array1=[0,1,2,3,4];
+        console.log(array1.fill(3,2,4));
+
+        const name=['dharan','dharanesh','kumar','priya','vasuu'];
+        const count= m=name.filter(name=>name.length >6);
+        console.log(count);
+
+        
+        console.log(array.find(num=>num>30));
+        console.log(array.findLast(num=>num>30));
+
+        console.log(array.findIndex(num=>num>50));
+        console.log(array.findLastIndex(num=>num<30));
+
+        const array3=[0,1,2,[[[[[3,4]]]]]];
+        console.log(array3.flat(5));
+
+        const array4=[0,1,[3,4],5,[6,7]];
+        console.log(array4.flatMap(num=>num));
+
+        array.forEach(num => console.log(num));
+
+        console.log(Array.from('don'));
+        console.log(Array.from([2,3,5],x=>x-1));
+
+        console.log(name.includes('dharan'));
+        console.log(name.includes('Dharan'));
+
+        console.log(name.indexOf("kumar"));
+
+        console.log(Array.isArray(new Array(5)));
+        console.log(Array.isArray([1,2,30]));
+        console.log(Array.isArray('1'));
+
+        const myName=['Dharan','Dharanesh'];
+        console.log(myName.join(" > "));
+
+        console.log(array1.lastIndexOf(3));
+
+        const multi=array1.map(x=>x*5);
+        console.log(multi);
+
+        console.log(Array.of('lion','tiger','Bear'));//Create an array for instance...
+
+        const animals=['tiger','lion','elephant','bear'];
+        console.log(animals.pop());//bear
+        console.log(animals);
+
+        console.log(animals.push('bear'));//4>Where it is added.
+        console.log(animals);
+
+        console.log(array1.reverse());
+
+        const number=['one','two','three','four'];
+        console.log(number.shift());
+        console.log(number.shift());//removes first element[opp to pop]
+
+        const numbers=['one','two','three','four'];
+        console.log(numbers.slice(-2));//returns last two.
+        console.log(numbers.slice(0,3));
+        console.log(numbers.slice(0,10));
+
+        const months = ['Jan', 'March', 'April', 'June']; 
+        months.splice(1, 2, 'Feb');
+        console.log(months);
+        months.splice(4, 1, 'May');
+        console.log(months);
+
+
+    </script>
+</body>
+</html>
