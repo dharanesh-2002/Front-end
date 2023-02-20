@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+    <script src="conditional.js" defer></script>
+    <style>
+        div{
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            color: black;
+        }
+        h1 {
+            background-color: lavender;
+            color: blueviolet;
+            text-align: center;
+            font-style: oblique;
+        }
+
+        select:active {
+            background-color: tan;
+            border: 3px solid coral;
+        }
+
+        #Department {
+            border: 3px solid coral;
+            width: 170px;
+            height: 25px;
+            text-align: center;
+        }
+        #val{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="theme" id="val">Select theme: </label>
+        <select id="theme">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+        </select>
+    </div>
+
+    <h1>Conditional</h1>
+    <label for="Department">choose your Department</label>
+    <select name="Department" id="Department">
+        <option value="Ur Choice">-Make ur own Choice-</option>
+        <option value="EEE">EEE</option>
+        <option value="ECE">ECE</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="EIE">EIE</option>
+    </select><br>
+    <p id="Choice"></p>
+    <p id="Dept"></p>
+</body>
+
+</html>

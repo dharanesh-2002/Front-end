@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+
+<body>
+
+    <button id="calculate">Calculate</button>
+    <button id="clear">Clear</button>
+    <p></p>
+
+    <h3>Check the student's id:</h3>
+    <input type="text">
+    <button id="btn">Search</button>
+    <p id="stu"></p>
+
+    <script>
+        const searchName = ['Dharanesh=191EE118', 'Gokul=191EE125', 'Siva=191EE220', 'Dhaya=191EE120', 'Vijay=191EE248'];
+        const animals = ['tiger', 'Lion', 'leopad', 'cheeta', 'elephants'];
+        for (const animal of animals) {
+            console.log(animal);
+        }
+
+        const toUpper = animals.map(animal1 => animal1.toUpperCase(animals));
+        console.log(toUpper);
+
+        const animals1 = ['tiger', 'Lion', 'Leopad', 'cheeta', 'elephants'];
+        const check = animals1.filter(animal1 => animal1.startsWith('L'));
+        console.log(check);
+
+        const calculate = document.getElementById('calculate');
+        const clear = document.getElementById('clear');
+
+        const cont = document.querySelector('p')
+        calculate.addEventListener('click', multiply)
+        clear.addEventListener('click', () => cont.textContent = " ");
+
+        function multiply() {
+            for (let i = 1; i <= 10; i++) {
+
+                const answer = `${i} * ${i} = ${i * i}`;
+                cont.textContent += `${answer}\n`;
+            }
+        }
+
+        const sId = document.getElementById("#stu");//content
+        var input = document.querySelector('input');//name
+        // input = input.toLowerCase();
+        const press = document.querySelector('#btn');
+        let temp = input.value;
+        temp = temp.toLowerCase();
+        press.addEventListener('click', () => {
+            for (let i = 0; i < searchName.length; i++) {
+                var tempry = searchName[i].toLowerCase();
+                // console.log(tempry);
+                if(tempry.includes(temp)) console.log(tempry);
+            }
+        });
+
+        function message() {
+
+
+        }
+
+    </script>
+</body>
+
+</html>
