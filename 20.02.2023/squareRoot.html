@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+</head>
+
+<body>
+    <label for="SquareRoot">Enter the number:</label>
+    <input type="text" name="SquareRoot" id="SquareRoot">
+    <button>Summit</button>
+    <p></p>
+    <script>
+        const cont = document.querySelector('p');
+        const input = document.querySelector('input');
+        const press = document.querySelector('button');
+
+        press.addEventListener('click', root);
+
+        function root() {
+            const num = input.value;
+            for (let i = 1; i <= num; i++) {
+                const squroot = Math.sqrt(i);
+                if(Math.floor(squroot) == squroot){ //floor is used to round the value.
+                    cont.textContent +=`${i}\n`;
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

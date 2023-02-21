@@ -53,11 +53,15 @@
         const press = document.querySelector('#btn');
         let temp = input.value;
         temp = temp.toLowerCase();
+        console.log(temp);
         press.addEventListener('click', () => {
+            let temp = input.value;
+            temp = temp.toLowerCase();
+            console.log(temp);
             for (let i = 0; i < searchName.length; i++) {
                 var tempry = searchName[i].toLowerCase();
-                // console.log(tempry);
-                if(tempry.includes(temp)) console.log(tempry);
+                // console.log(tempry + " " + temp);
+                if(tempry.includes(temp)) alert(`${tempry}`)
             }
         });
 
