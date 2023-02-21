@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <label for="key">View your keypad press</label>
+    <input type="text">
+    <p></p>
+    
+    <script>
+        //invoking function
+        function message(){
+            console.log("Hello")
+        }
+        message();
+
+        //Function Parameters
+
+        add(100,300);
+
+        function add(num1, num2){
+            console.log(num1+num2);
+        }
+
+        const sentance="I am working with HTML";
+        console.log(sentance.replace('HTML', "JavaScript"));
+
+        //Optional Parameters
+        const array=['I','love','JS'];
+        console.log(array.join(' '));
+        console.log(array.join());
+
+        //Default Parameters
+        function display(lang='JS'){
+            console.log(`I like to learn ${lang}`);
+        }
+        display('HTML');
+        display();
+
+        //Anonymous Function
+        const input=document.querySelector('input');
+        const para=document.querySelector('p');
+        input.addEventListener('keydown',function(event){
+            para.textContent=`You pressed ${event.key}`;
+        })
+
+        //Arrow Function
+        const array1=[1,2,3];
+        console.log(array1.map((item)=>item*2));
+
+
+        //Return
+
+        const square=document.querySelector('square');
+        const press=document.querySelector('button');
+        const para1=document.querySelector('squ');
+    </script>
+</body>
+</html>
