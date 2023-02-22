@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        p {
+            background-color: antiquewhite;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Change Color</button>
+    <button id="Disp">Dispaly</button><br>
+    <br>
+    <!-- It is not recommended -->
+    <button onclick="alert('This is an inline event handler');">
+        Press me
+    </button> 
+    <br>
+    <form action="trial">
+        <label for="trial">Enter your name</label>
+        <input type="text">
+    </form>
+    <label for="key">To Know an key</label>
+    <input type="text"  id="key">
+    <p id="down"></p><br>
+    <p id="tag"></p><br>
+    <p></p>
+    <script>
+        const button = document.querySelector("button");
+
+        function random(num) {
+            return Math.floor(Math.random() * (num + 2));
+        }
+        console.log(Math.random());
+
+        button.addEventListener('click', () => {
+            const bgcolor = `rgb(${random(100)},${random(100)},${random(100)})`;
+            document.body.style.backgroundColor = bgcolor;
+        })
+        const btn = document.getElementById('Disp');
+        const para = document.querySelector('p');
+
+        btn.onclick = dsiplay;
+
+        function dsiplay() {
+            para.textContent = "Hi Sumeka, Welcome to my page";
+        }
+
+        const input=document.querySelector('input')
+        
+        input.addEventListener('click',(doc)=>{
+            const b1color = `rgb(${random(100)},${random(100)},${random(100)})`;
+            doc.target.style.backgroundColor = b1color;
+        })
+
+
+        const key=document.querySelector("#key");
+        const down=document.querySelector('#down');
+        const tag=document.querySelector('#tag')
+
+        key.addEventListener('keydown',(event)=>{
+            down.textContent=`You have pressed "${event.key}"`
+            tag.textContent +=`You pressed "${event.currentTarget.tagName} element"`
+        })
+    </script>
+</body>
+
+</html>
