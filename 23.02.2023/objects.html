@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name:{
+                fname:'Dharanesh',
+                lname:'Kumar',
+            },
+            age: 32,
+            bio() {
+                console.log(`${this.name.fname} ${this.name.lname} is ${this.age} years old.`);
+            },
+            introduceSelf() {
+                console.log(`Hi! I'm ${this.name.fname}.`);
+            },
+            siblings:{
+                sister:"sis",
+                brother:"bro",
+            },
+        };
+        person.bio();
+        console.log(person);
+        person.introduceSelf();
+        console.log(person.siblings.sister)
+        console.log(person["age"])
+        console.log(person["siblings"]["sister"])
+        person.bio()
+
+        const person1={
+            name:'Dharanesh',
+            introduce(){
+                console.log(`I am ${this.name}`)
+            },
+        };
+        const person2={
+            name:'Kumar',
+            introduce(){
+                console.log(`I am ${this.name}`)
+            },
+        }
+        person2.introduce();
+        person1.introduce();
+
+        //Constructor
+    </script>
+</body>
+
+</html>
