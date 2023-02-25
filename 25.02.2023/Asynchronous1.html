@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous1</title>
+</head>
+
+<body>
+    <button id="xhr">Click to start request</button>
+    <button id="reload">Reload</button>
+
+    <pre readonly class="event-log"></pre>
+
+    <script>
+        //XMLHttpRequest
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', "https://raw.githubusercontent.com/mdn/content/main/files/en-us/_wikihistory.json");
+        xhr.send();
+        console.log("Started XHR request")
+        xhr.onload = () => {
+            console.log(`End Status:${xhr.status}`)
+        }
+
+        const log = document.querySelector('.event-log');
+
+        document.querySelector('#xhr').addEventListener('click', () => {
+            log.textContent = '';
+
+            const xhr = new XMLHttpRequest();
+
+            xhr.addEventListener('loadend', () => {
+                log.textContent = `${log.textContent}Finished with status: ${xhr.status}`;
+            });
+
+            xhr.open('GET', 'https://raw.githubusercontent.com/mdn/content/main/files/en-us/_wikihistory.json');
+            xhr.send();
+            log.textContent = `${log.textContent}Started XHR request\n`;
+        });
+
+        document.querySelector('#reload').addEventListener('click', () => {
+            log.textContent = '';
+            document.location.reload();
+        });
+
+
+        //CallBack
+        function add2(num1){
+            return num1+1;
+        }
+        function add1(num1){
+            return num1+1;
+        }
+        function add(num1){
+            return num1+1;
+        }
+        function adding(num){
+            let result=num;
+            result=add(result);
+            result=add1(result);
+            result=add2(result);
+            console.log(`Result:${result}`);
+        }
+        adding(10);
+
+    </script>
+</body>
+
+</html>

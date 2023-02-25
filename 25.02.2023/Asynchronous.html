@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body>
+    <script>
+        //Synchronous: One line code is completed then only move to next one
+        console.log("This is an example for synchronous");
+        console.log("Hello");
+        console.log("I am Dharanesh");
+
+        //Asynchronous
+        console.log("This is an example for Asynchronous with TimeOut and Interval")
+
+        console.log("Welcome to Online Store");
+        console.log("Your Order has placed successfully");
+        setTimeout(()=>console.log("Your order is packed"),3500);
+        setTimeout(()=> console.log("request an order"),1000);
+        setTimeout(()=>console.log("Out for delivery"),4000);
+        setTimeout(()=> console.log("order processed"),2000);
+        setTimeout(()=>console.log("Delivered Successfully"),4500);
+
+        setInterval(()=> console.log("Hi !!! Dharanesh"), 2000);
+        
+        
+    </script>
+</body>
+</html>
