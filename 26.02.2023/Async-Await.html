@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Await & Async</title>
+</head>
+<body>
+    <script>
+        const reach= new Promise((resolve,reject)=>{
+            const reached = false
+            if(reached){
+                setTimeout(resolve,1500,"Dharan has reached")
+            }
+            else{
+                reject("Dharan has not reached")
+            }
+        })
+
+        // async function reachStatus(){
+
+        //     const res = await reach;
+        //     console.log(res)
+        // }
+
+        // reachStatus();
+
+        // const reached = false, in this senario it shows an error..For that try cache is used
+        // async function reachStatus(){
+        //     const res = await reach;
+        //     console.log(res)
+        // }
+
+        reachStatus();
+
+        async function reachStatus(){
+            try{
+                const res = await reach;
+                console.log(res)
+            }
+            catch(error)
+            {
+                console.log(error)
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
