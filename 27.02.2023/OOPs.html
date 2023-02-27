@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs</title>
+</head>
+
+<body>
+    <script>
+        class Polygon {
+            constructor(num1, num2) {
+                console.log(num1 * num2);
+            }
+        }
+        const area = new Polygon(2, 5);
+
+        class student {
+            age;
+            constructor() {
+                console.log(`her age is ${this.age}`);//undefined
+            }
+            identity() {
+                console.log(`Dharan age is ${this.age}`);
+            }
+        }
+        const obj = new student();
+        obj.age = 13;
+        obj.identity();
+
+        //Classes:
+        class User{
+            static noOfUsers=0;
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+                User.noOfUsers++;
+            }
+            login(){
+                console.log(`Hi ${this.name}, ${this.age}`)
+                console.log("Your are logged in");
+            }
+            logout(){
+                console.log(`Hi ${this.name}, ${this.age}`)
+                console.log("Your are logged out");
+            }
+
+            static display(){
+                console.log(User.noOfUsers);
+            }
+        }
+
+        let user1=new User("Dharan",21);
+        user1.login();
+        let user2=new User("Dharanesh",22);
+        user2.logout();//Called with help of object...
+        //console.log(User.noOfUsers);
+        User.display();//Called with help of class...
+
+        //inheritance
+        class PaidUser extends User{
+            constructor(name,age){
+                super(name,age);
+            }
+            message(){
+                console.log("Thank you for your support");
+            }
+            login(){
+                console.log("Welcome");
+            }
+        }
+        let paidUser1=new PaidUser("Dharanesh",22);
+        paidUser1.login();//child is called.
+        paidUser1.logout();
+        paidUser1.message();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+
+<body>
+    <button>Search</button>
+    <p></p>
+    <script>
+        const press = document.querySelector('button');
+        const para = document.querySelector('p');
+
+        press.addEventListener('click', geolocation)
+
+        function geolocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    para.textContent = "Latitude: " + position.coords.latitude +
+                        " Longitude: " + position.coords.longitude;
+                })
+            }
+            else{
+                para.textContent="Geolocation is not supported"
+            }
+        }
+    </script>
+</body>
+
+</html>

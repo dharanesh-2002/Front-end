@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+
+<body>
+    <script>
+        // const fetchPromise = fetch('lc.json');
+
+        // fetchPromise.then((response) => {
+        //     const jsonPromise = response.json();
+        //     jsonPromise.then((data) => {
+        //         console.log(data.dependencies['@babel/generator'].version);
+        //     });
+        // });
+
+        const details=fetch('sample.txt');
+        details.then((Response)=>{
+            const text=Response.text(); 
+            text.then((data)=>{
+                console.log(data);
+            })
+        })
+    </script>
+</body>
+
+</html>
