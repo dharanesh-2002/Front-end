@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+
+<body>
+    <script>
+        //Scoping
+        let b = [1, 2, 3, 4, 5]
+        for (let i = 0; i < b.length; i++) {
+            let a = [];
+            a.push(b[i]);
+        }
+        // console.log(a);
+        console.log(b);
+
+
+        function add(num, num1) {
+            return num + num1;
+        }
+        if (add(10, 5) === 15) {
+            console.log("Matched")
+        }
+
+        //Arrow Function
+        let twoModulo = [];
+        b.forEach((n) => {
+            if (n % 2 == 0) {
+                twoModulo.push(n)
+            }
+        })
+        console.log(twoModulo);
+
+        //Extended Parameter Handling -->Default Parameter Values
+        function f(x, y = 25, z = 22) {
+            return x + y + z;
+        }
+        console.log(f(1) === 48);
+
+        //Rest Parameter
+        function f1(x, y, ...z) {
+            console.log(z);
+            return (x + y) * z.length;
+        }
+
+        console.log(f1(1, 2, "hello", 4, true) == 7);
+
+        //Spread Operator
+        let lang = ["Java", "C#", "HTML"];
+        let lang1 = [...lang, "JavaScript", "CSS"];
+
+        console.log(lang);
+        console.log(lang1);
+
+        //Template Literals --->String Interpolation
+        var customer = { name: "Foo" }
+        var card = { amount: 7, product: "Bar", unitprice: 42 }
+        var message = `Hello ${customer.name}, 
+        want to buy ${card.amount} ${card.product} for
+        a total of ${card.amount * card.unitprice} bucks?`
+        console.log(message)
+
+        //String raw
+        const greet=String.raw`Hi\n, Dharanesh`;
+        console.log(greet);
+
+        //Destructuring Assignment-->Array Matching
+        let array=[1,2,3];
+        let[x,y,z]=array;
+        console.log(x);
+
+
+
+        var d=23;
+        (function(){
+            var d=43;
+            (function random(){
+                d++;
+                console.log(d)
+                var d=21;
+                
+            })();
+        })();
+
+    </script>
+</body>
+
+</html>
