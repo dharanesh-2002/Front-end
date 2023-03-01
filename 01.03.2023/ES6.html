@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Destructuring Assignment-->Object Matching
+
+        const details = {
+            name: "Dharanesh",
+            id: 1234,
+            age: 21,
+        }
+
+        student(details);
+        function student({ name, id, age }) {
+            console.log(`I am ${name} and my Id is ${id}`);
+            console.log('My age is' + ' ' + age)
+        }
+
+        //Destructuring Assignment-->Object Matching deep learn
+
+        const company = {
+            name: "Aspire System",
+            Location: "Sipcot IT Park",
+            Project: {
+                work: "JavaScript",
+                work1: "HTML",
+                work2: "CSS"
+            }
+
+        }
+
+        myCompany(company);
+        function myCompany({ name, Project: { work } }) {
+            console.log('In' + " " + name + ", I am working with" + ' ' + work);
+        }
+
+        //Object and Array Matching...
+        var obj = { a: 1, b: 4, c: 2 }
+        var list = [1]
+        var { a, b = 2 } = obj
+        var [x, y = 2] = list
+        console.log(a);
+        console.log(obj.c);
+
+
+        //Fail-soft Destruction
+        var list = [7, 42]
+        var [a = 1, b = 2, c = 3, d] = list;
+        console.log(a === 1);
+        console.log(a === 7);
+        console.log(c === 3);
+        console.log(d === undefined);
+
+        //Classes
+
+        class Maths {
+            constructor(name, y, z) {
+
+                this.name = name;
+                this.add(y, z);
+            }
+            add(num1, num2) {
+                console.log(this.name)
+                console.log(num1 + num2);
+            }
+        }
+        let obj1 = new Maths('Dharanesh', 3, 2);
+
+        //Getter & Setter
+
+        const language = {
+            set current(name) {
+                this.log.push(name);
+            },
+            log: [],
+
+            get latest() {
+                return this.log[this.log.length - 2];
+            }
+        };
+
+        language.current = 'English';
+        language.current = 'Tamil';
+        console.log(language.latest);
+
+        //New Build-In Methods:
+        //Object assign:-
+        const target = { a: 1, b: 2, c: 4 };
+        const source = { b: 4, c: 3 };
+
+        Object.assign(target, source);
+        console.log(target)//Source is copied to the target.
+
+        //Array Finding
+        const array = [0, 1, 2, 3, 4, 5];
+        console.log(array.find((x) => x > 2));
+        console.log(array.findIndex((x) => x > 3));
+
+        //Number Type Checking...
+        console.log(Number.isNaN(NaN));
+        console.log(Number.isNaN(123));
+        const name="Dharan"
+        console.log(isNaN(name));
+
+        console.log(Number.isFinite(Infinity));
+        console.log(Number.isFinite(123));
+
+        //Number Truncation
+        console.log(Math.trunc(45.9));
+        console.log(Math.trunc(0.5));
+
+        //Internationalization & Localization --> Collation
+
+        const list1=['b','e','r','t','y','a','m'];
+        const English=new Intl.Collator('en');
+        console.log(English.compare("e","b"));
+        console.log(English.compare("b","e"));
+        console.log(English.compare("a","a"));
+        console.log(list1.sort(English.compare));
+
+        //Number Formating
+        const digitFormat=new Intl.NumberFormat('en-Us');
+        console.log(digitFormat.format(123456789));
+
+        //Currency Formating
+        const currencyFormat=new Intl.NumberFormat('en-Us',{style: "currency", currency:"USD"});
+        console.log(currencyFormat.format(123456));
+
+        //Date and Time Format
+        const dateTime=new Intl.DateTimeFormat("en-Us");
+        console.log(dateTime.format(new Date("03-12-2002")))
+    </script>
+</body>
+
+</html>
